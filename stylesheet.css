@@ -2,33 +2,30 @@
     font-family: 'press_start_2pregular';
     src: url('pressstart2p-regular-webfont.woff2') format('woff2'),
          url('pressstart2p-regular-webfont.woff') format('woff');
-
+    font-weight: normal;
+    font-style: normal;
 }
 /* use something like
 h1 {
-font-family: 'CustomFont', Arial, sans-serif;
+font-family: 'press_start_2pregular';
 font-weight:normal;
 font-style:normal;
 }
 to use this font*/
 p {
 	font-family: 'press_start_2pregular', cursive;
-} 
+}
 
 h1 {
   text-align: center;
   font-size: 96px;
   font-family: press_start_2pregular;
-  font-weight: normal;
-  font-style: normal;
 }
 
 h4 {
   text-align: center;
   font-size: 24px;
   font-family: press_start_2pregular;
-  font-weight: normal;
-  font-style: normal;
 }
 		/* #container {
 			padding-left: 200px;
