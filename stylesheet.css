@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: 'press_start_2pregular';
     src: url('pressstart2p-regular-webfont.woff2') format('woff2'),
          url('pressstart2p-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 /* use something like
 h1 {
 font-family: 'press_start_2pregular';
@@ -16,7 +16,7 @@ to use this font*/
 h1 {
   text-align: center;
   font-size: 96px;
-  font-family: press_start_2pregular;
+  font-family: Press Start 2P;
 }
 
 h4 {
@@ -24,4 +24,3 @@ h4 {
   font-size: 24px;
   font-family: press_start_2pregular;
 }
-	
