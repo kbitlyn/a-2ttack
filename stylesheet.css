@@ -28,6 +28,8 @@ h6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50%
+  height: 50%;
   width: 50%;
+  padding-top: 50px;
+  
 }
