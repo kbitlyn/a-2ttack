@@ -24,3 +24,9 @@ h6 {
   font-size: 22px;
   font-family: 'Press Start 2P', cursive;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
