@@ -4,10 +4,16 @@
          url('pressstart2p-regular-webfont.woff') format('woff');
 
 }
-
-/* p {
+/* use something like
+h1 {
+font-family: 'CustomFont', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+to use this font*/
+p {
 	font-family: 'press_start_2pregular', cursive;
-} */
+} 
 
 h1 {
   text-align: center;
