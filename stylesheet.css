@@ -31,5 +31,12 @@ h6 {
   height: 50%;
   width: 50%;
   padding-top: 50px;
-  
+
+}
+
+.buttons {
+  display: block;
+  height:10%;
+  width:10%;
+
 }
