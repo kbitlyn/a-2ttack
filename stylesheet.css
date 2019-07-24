@@ -15,7 +15,7 @@ to use this font*/
 
 h1 {
   text-align: center;
-  font-size: 96px;
+  font-size: 48px;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -88,4 +88,5 @@ h6 {
 
 #scratchGames {
   text-align: center;
+  padding-bottom: 5px;
 }
