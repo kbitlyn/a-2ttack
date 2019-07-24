@@ -20,6 +20,13 @@ h6 {
 
 }
 
+.container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
 * {
   box-sizing: border-box;
 }
