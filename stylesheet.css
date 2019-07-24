@@ -85,3 +85,7 @@ h6 {
 #myBtn:hover {
   background-color: #c8daf8; /* Add a dark-grey background on hover */
 }
+
+#scratchGames {
+  text-align: center;
+}
