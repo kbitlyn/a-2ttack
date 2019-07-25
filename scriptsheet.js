@@ -33,7 +33,7 @@ function fetchJSON(path, callback) {
 funtion init() {
   fetchJSON('data.json', function(data)) {
     document.getElementById('').innerHTML=""
-  }
+  );
 }
 
 window.onload = init;
