@@ -31,7 +31,10 @@ function fetchJSON(path, callback) {
 }
 
 function init() {
-  fetchJSON('data.json', function(data)) {
+  fetchJSON('oftenStressed.json', function(data)) {
+    for (var i = 0; i < oftenStressed.Question.length; i++) {
+      var stressAlways = 
+    }
     document.getElementById('').innerHTML=""
   );
 }
