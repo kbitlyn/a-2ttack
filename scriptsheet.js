@@ -30,13 +30,13 @@ function fetchJSON(path, callback) {
 
 }
 
-function init() {
-  fetchJSON('oftenStressed.json', function(data)) {
-    for (var i = 0; i < oftenStressed.Question.length; i++) {
-      var stressAlways = 
-    }
-    document.getElementById('').innerHTML=""
-  );
-}
-
-window.onload = init;
+// function init() {
+//   fetchJSON('oftenStressed.json', function(data)) {
+//     for (var i = 0; i < oftenStressed.Question.length; i++) {
+//       // var stressAlways =
+//     }
+//     document.getElementById('').innerHTML=""
+//   );
+// }
+//
+// window.onload = init;
