@@ -30,7 +30,7 @@ function fetchJSON(path, callback) {
 
 }
 
-funtion init() {
+function init() {
   fetchJSON('data.json', function(data)) {
     document.getElementById('').innerHTML=""
   );
