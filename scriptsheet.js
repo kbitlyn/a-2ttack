@@ -30,13 +30,37 @@ function fetchJSON(path, callback) {
 
 }
 
-// function init() {
-//   fetchJSON('oftenStressed.json', function(data)) {
-//     for (var i = 0; i < oftenStressed.Question.length; i++) {
-//       // var stressAlways =
-//     }
-//     document.getElementById('').innerHTML=""
-//   );
-// }
-//
-// window.onload = init;
+function initMap() {
+  var options = {
+    zoom: 8,
+    center:{lat:42.3601, lng:-71.0589}
+  }
+
+  var map = new
+  google.maps.Map(document.getElementById('map'), options);
+
+}
+
+function init() {
+  fetchJSON('doctors.json', function(data) {
+    console.log(data.data[0].name)
+    // console.log(data.data[0].lat)
+    // console.log(data.data[0].lon)
+    console.log(data.data[0].visit_address.lat)
+    console.log(data.data[0].visit_address.lon)
+    console.log(data.data[0].visit_address.street)
+    console.log(data.data[0].visit_address.zip)
+    console.log(data.data[0].phones[1].number)
+    console.log(data.data[0].total_doctors)
+    console.log(data.data[0].doctors[0].profile.first_name)
+    console.log(data.data[0].doctors[0].profile.last_name)
+    console.log(data.data[0].doctors[0].profile.bio)
+
+    // for (var i = 0; i < data.data.length; i++) {
+    //   // var stressAlways =
+    // }
+    // document.getElementById('').innerHTML=""
+  });
+}
+
+window.onload = init;

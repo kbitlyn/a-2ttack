@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "data_type": "array",
+    "item_type": "Practice",
+    "total": 11,
+    "count": 10,
+    "skip": 0,
+    "limit": 10
+  },
+  "data": [
+    {
+      "location_slug": "ca-san-francisco",
+      "within_search_area": true,
+      "distance": 1.7755724879360315,
+      "lat": 37.78974,
+      "lon": -122.43246,
+      "uid": "5390049dfaf089a8f9b6683aef592d1a",
+      "name": "Alliance Mental Health",
+      "accepts_new_patients": true,
+      "insurance_uids": [
+        "cigna-cignalocalplus",
+        "cigna-cignappo",
+        "cigna-cignaopenaccessplus",
+        "healthnet-healthnetcacoveredcaliforniapposmallgroup",
+        "healthnet-healthnetcaindividualfamilyppo",
+        "cigna-cignahmo",
+        "healthnet-healthnetcalargegroupppo",
+        "healthnet-healthnetindividualfamilyppohix"
+      ],
+      "visit_address": {
+        "city": "San Francisco",
+        "lat": 37.78974,
+        "lon": -122.43246,
+        "state": "CA",
+        "state_long": "California",
+        "street": "2019 Webster St",
+        "zip": "94115"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "4154478665",
+          "type": "fax"
+        },
+        {
+          "number": "4154090944",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 3,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/5390049dfaf089a8f9b6683aef592d1a/doctors",
+      "doctors": [
+        {
+          "educations": [
+            {
+              "school": "University of Arizona College of Medicine",
+              "degree": "MD"
+            },
+            {
+              "school": "Medical University of South Carolina College of Medicine",
+              "degree": "Residency"
+            }
+          ],
+          "profile": {
+            "first_name": "Katherine",
+            "last_name": "Chemodurow",
+            "slug": "katherine-chemodurow-md",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/images/529fa0404214f86012001148-1_thumbnail.jpg",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "My practice style revolves around comprehensive psychiatric care.I try to take into consideration all  aspects of the client — including medical issues, family and relationship issues, occupational issues,  and spiritual issues.I tailor each unique treatment plan to the client.I believe psychiatric medications  and psychotherapy (“talk therapy”) are both valid and effective approaches to treatment.Often,  combining medications with therapy will yield the best, most swift results.I am trained in various  therapy modalities, including CBT (cognitive behavior therapy), solution-oriented therapy,  psychodynamic therapy, Jungian therapy, and others.My educational background includes a Biochemistry B.S. at the University of Arizona, followed by medical school at the University of Arizona College of Medicine.After medical school, I completed a 4-year residency program in Adult Psychiatry at the Medical University of South Carolina.Thank you for reading a little bit about me and my practice.I look forward to meeting you!"
+          },
+          "ratings": [
+            {
+              "active": true,
+              "provider": "yelp",
+              "provider_uid": "katherine-chemodurow-san-francisco",
+              "provider_url": "http://www.yelp.com/biz/katherine-chemodurow-san-francisco"
+            },
+            {
+              "active": true,
+              "provider": "betterdoctor",
+              "provider_uid": "184136ea07a82815073f87db5cd7111c",
+              "rating": 4.5,
+              "review_count": 0,
+              "image_url_small": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-4.5.png",
+              "image_url_small_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-4.5@2x.png",
+              "image_url_large": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-4.5.png",
+              "image_url_large_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-4.5@2x.png"
+            }
+          ],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "43926"
+            },
+            {
+              "number": "LL30101",
+              "state": "SC"
+            }
+          ],
+          "uid": "184136ea07a82815073f87db5cd7111c",
+          "npi": "1386835106"
+        },
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Anisha",
+            "middle_name": "Jitendra",
+            "last_name": "Patel",
+            "slug": "anisha-patel",
+            "title": "DO",
+            "image_url": "https://asset1.betterdoctor.com/images/55b57bdcb9d6042fbb003719-2_thumbnail.jpg",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Anisha Patel, DO--specialist in psychiatry--currently practices medicine at San francisco, California and Walnut creek, California.\n\nDr. Patel is licensed to see patients in California.\n\nDr. Patel has been found during an automated background check to be clear of any malpractice history and holds one or more active medical licenses."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "20A8576",
+              "state": "CA"
+            }
+          ],
+          "uid": "8f637a905abacb5229f7806566460564",
+          "npi": "1932136678"
+        },
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Udi",
+            "last_name": "Zaken",
+            "slug": "udi-zaken-md",
+            "title": "MD",
+            "image_url": "https://asset2.betterdoctor.com/assets/general_doctor_male.png",
+            "gender": "male",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Udi Zaken, MD sees patients in San francisco, California and specializes in psychiatry.\n\nDr. Zaken is licensed to practice medicine at California.\n\nDr. Zaken has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A86455",
+              "state": "CA"
+            }
+          ],
+          "uid": "38f2289925d5d4eb69a14f39c841e2db",
+          "npi": "1528003241"
+        }
+      ]
+    }
+  ]
+}
