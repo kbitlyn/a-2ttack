@@ -42,10 +42,9 @@ function initMap() {
 }
 
 function init() {
+  initMap();
   fetchJSON('doctors.json', function(data) {
     console.log(data.data[0].name)
-    // console.log(data.data[0].lat)
-    // console.log(data.data[0].lon)
     console.log(data.data[0].visit_address.lat)
     console.log(data.data[0].visit_address.lon)
     console.log(data.data[0].visit_address.street)
@@ -54,12 +53,21 @@ function init() {
     console.log(data.data[0].total_doctors)
     console.log(data.data[0].doctors[0].profile.first_name)
     console.log(data.data[0].doctors[0].profile.last_name)
-    console.log(data.data[0].doctors[0].profile.bio)
 
     // for (var i = 0; i < data.data.length; i++) {
-    //   // var stressAlways =
+    //   var officeName = document.createElement('p');
+    //   officeName.style. = data.data[i].name;
+    //   document.getElementById('showClinic').appendChild(officeName);
     // }
-    // document.getElementById('').innerHTML=""
+    document.getElementById("nameOffice").innerHTML = data.data[0].name;
+    document.getElementById('addressOffice').innerHTML = data.data[0].visit_address.street;
+    document.getElementById('addressZip').innerHTML = data.data[0].visit_address.zip;
+    document.getElementById('phoneNumber').innerHTML = data.data[0].phones[1].number;
+    document.getElementById('firstName').innerHTML = data.data[0].doctors[0].profile.first_name;
+    document.getElementById('lastName').innerHTML = data.data[0].doctors[0].profile.last_name;
+
+
+
   });
 }
 

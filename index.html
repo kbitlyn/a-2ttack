@@ -19,9 +19,10 @@
     <div class="w3-container">
 
 
+
       <img src='https://i.imgur.com/ZU4PBri.png' alt='a²ttack' class='center'>
 
-    <h6>
+      <h6>
         <br>
           38% of female teens have an anxiety disorder.
         </br>
@@ -41,7 +42,7 @@
       <div class="clearfix" align:"center">
 
         <div class="img-container">
-          <input type="image" src= "stats8bit.png" onClick="document.getElementById('stats').scrollIntoView();" style="width:60%;height:50%"/>
+          <input type="image" src= "map8bit.png" onClick="document.getElementById('map').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
         <div class="img-container">
@@ -69,21 +70,51 @@
         <!-- <iframe src="https://scratch.mit.edu/projects/317979917/embed" allowtransparency="true" width="850" height="700" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
       </div>
 
-      <div id="map-section">
       <style>
         #map {
           height: 600px;
           width: 88%;
+          text-align: center;
         }
       </style>
-      <div id="map"> </div>
+
+      <div id="map"></div>
+      <h6>find mental health clinics near you</h6>
       <input id="pac-input" class="controls" type="text" placeholder="Search Bar">
+      <br></br>
+      <div id="showClinic">
+        <table>
+          <tr>
+            <th>
+              <p id="nameOffice"></p>
+            </th>
+          </tr>
+
+          <td>
+            <p id="addressOffice"></p>
+            <p id="addressZip"></p>
+          </td>
+
+          <td>
+            <p id="phoneNumber"></p>
+          </td>
+
+          <td>
+            <p id="firstName"></p>
+            <p id="lastName"></p>
+          </td>
+
+        </table>
+
+
+      </div>
 
 
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDky-AzNy6ac3nW6cnIW5dzWzybWzku-I4&callback=initMap">
        </script>
 
-      <div id="stats"></div>
+
+
 
       <div id="resources">
         <h1>
@@ -166,20 +197,20 @@
             </br>
           </h1>
           <h6>
-          <br>
-            https://www.everydayhealth.com/anxiety/guide/resources/
-          </br>
-          <br>
-            https://evolvetreatment.com/blog/teen-stress-and-anxiety-facts-and-statistics/
-          </br>
-          <br>
-            https://www.nami.org/learn-more/mental-health-by-the-numbers
-          </br>
-    </h6>
+            <br>
+              https://www.everydayhealth.com/anxiety/guide/resources/
+            </br>
+            <br>
+              https://evolvetreatment.com/blog/teen-stress-and-anxiety-facts-and-statistics/
+            </br>
+            <br>
+              https://www.nami.org/learn-more/mental-health-by-the-numbers
+            </br>
+          </h6>
       </div>
 
     </div>
-  </div>
+</div>
   <script>
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};

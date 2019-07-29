@@ -9,6 +9,19 @@ h6 {
   font-size: 22px;
   font-family: 'Press Start 2P', cursive;
 }
+
+table {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+
+.smallFont {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Press Start 2p", cursive;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -67,6 +80,20 @@ h6 {
 #scratchGames {
   text-align: center;
   padding-bottom: 5px;
+}
+
+#map {
+  height: 600px;
+  width: 88%;
+  text-align: center;
+}
+
+#showClinic {
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
   /* body {
 			min-width: 630px;
 		} */
