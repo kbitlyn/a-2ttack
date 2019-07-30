@@ -1,6 +1,3 @@
-var lat;
-var lon;
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -33,9 +30,6 @@ function fetchJSON(path, callback) {
 
 }
 
-
-
-
 function getLocation() {
   var x = document.getElementById("demo");
   if (navigator.geolocation) {
@@ -46,9 +40,15 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  lat = position.coords.latitude;
-  lon = position.coords.longitude;
-  // x.innerHTML = "Latidude: " + lat "<br>Longitude: </br>" + lon;
+  var x = document.getElementById("demo");
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+  findOffices(lat,lon);
+}
+
+function findOffices(latitude,longitude) {
+  var path = "https://api.betterdoctor.com/2016-03-01/practices?name=mental%20health&sort=full-name-asc&skip=0&limit=4&user_key=ec9d4f25fb4c4d5b47225096d639bca0&user_location=#{latitude},#{longitude}&location=#{latitude},#{longitude},50"
+  console.log(path);
 }
 
 function initMap() {
@@ -64,8 +64,6 @@ function init() {
   fetchJSON('doctors.json', function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
-
-
       var columnDiv = document.createElement("div");
       columnDiv.className = "column";
 
@@ -82,13 +80,10 @@ function init() {
       addressOffice.innerHTML = (data.data[i].visit_address.street + ", " + data.data[i].visit_address.city + " " + data.data[i].visit_address.zip);
       cardDiv.appendChild(addressOffice);
 
-
       var phoneNumber = document.createElement("p");
       phoneNumber.id = "phoneNumber";
       phoneNumber.innerHTML = data.data[i].phones[1].number;
       cardDiv.appendChild(phoneNumber);
-
-
 
       var doctorRec = document.createElement("p");
       doctorRec.id = "doctorRec";
@@ -97,14 +92,7 @@ function init() {
 
       columnDiv.appendChild(cardDiv);
       document.getElementById("doctorOffices").appendChild(columnDiv);
-
-      console.log(document.getElementById("doctorOffices"));
     }
-
-
-
-
-
   });
 }
 
