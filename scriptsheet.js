@@ -1,3 +1,6 @@
+var lat;
+var lon;
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -30,21 +33,34 @@ function fetchJSON(path, callback) {
 
 }
 
-function initMap() {
-  var options = {
-    zoom: 8,
-    center:{lat:42.3601, lng:-71.0589}
+
+
+
+function getLocation() {
+  var x = document.getElementById("demo");
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
   }
+}
 
-  var map = new
-  google.maps.Map(document.getElementById('map'), options);
+function showPosition(position) {
+  lat = position.coords.latitude;
+  lon = position.coords.longitude;
+  // x.innerHTML = "Latidude: " + lat "<br>Longitude: </br>" + lon;
+}
 
+function initMap() {
+  var map;
 
-
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
 }
 
 function init() {
-  initMap();
   fetchJSON('doctors.json', function(data) {
 
     for (var i = 0; i < data.data.length; i++) {

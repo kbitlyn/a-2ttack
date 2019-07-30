@@ -7,10 +7,12 @@
 
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script type="placesapi" src="https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters">
-  </script>
   <link rel="stylesheet" href="stylesheet.css">
-  <script type="text/javascript" src="scriptsheet.js">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDky-AzNy6ac3nW6cnIW5dzWzybWzku-I4&callback=initMap">
+   </script>
+
+  <script src="scriptsheet.js">
   </script>
 
   <meta charset = "UTF-8" />
@@ -80,10 +82,13 @@
       </style>
 
       <div id="map"></div>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDky-AzNy6ac3nW6cnIW5dzWzybWzku-I4&callback=initMap">
-       </script>
+
       <h6>find mental health clinics near you</h6>
-      <input id="pac-input" class="controls" type="text" placeholder="Search Bar">
+
+      <button onclick="getLocation()">Find the nearest clinics!</button>
+      <div id='demo'></div>
+
+      <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Bar"> -->
 
       <br></br>
 
