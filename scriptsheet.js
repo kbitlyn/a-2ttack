@@ -43,6 +43,8 @@ function showPosition(position) {
   var x = document.getElementById("demo");
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
+  console.log(lat);
+  console.log(lon);
   console.log("Latitude #{lat} Longitude #{lon}");
   findOffices(lat,lon);
 }
