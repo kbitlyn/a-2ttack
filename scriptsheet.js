@@ -43,14 +43,15 @@ function showPosition(position) {
   var x = document.getElementById("demo");
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
-  console.log(lat);
-  console.log(lon);
-  console.log("Latitude #{lat} Longitude #{lon}");
+
   findOffices(lat,lon);
 }
 
 function findOffices(latitude,longitude) {
-  var path = "https://api.betterdoctor.com/2016-03-01/practices?name=mental%20health&sort=full-name-asc&skip=0&limit=4&user_key=ec9d4f25fb4c4d5b47225096d639bca0&user_location=#{latitude},#{longitude}&location=#{latitude},#{longitude},50"
+  var location = "&location=" + latitude.toString() + "," + longitude.toString() + ",50";
+  var userLocation = "&user_location=" + latitude.toString() + "," + longitude.toString();
+  var path = "https://api.betterdoctor.com/2016-03-01/practices?name=mental%20health&sort=full-name-asc&skip=0&limit=4&user_key=ec9d4f25fb4c4d5b47225096d639bca0" + location + userLocation;
+  console.log(path);
   fetchJSON(path, function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
