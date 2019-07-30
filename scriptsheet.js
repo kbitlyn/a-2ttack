@@ -39,6 +39,8 @@ function initMap() {
   var map = new
   google.maps.Map(document.getElementById('map'), options);
 
+
+
 }
 
 function init() {
@@ -46,6 +48,7 @@ function init() {
   fetchJSON('doctors.json', function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
+
 
       var columnDiv = document.createElement("div");
       columnDiv.className = "column";
@@ -56,27 +59,30 @@ function init() {
       var nameOffice = document.createElement("h3");
       nameOffice.id = "nameOffice";
       nameOffice.innerHTML = data.data[i].name;
-      columnDiv.appendChild(nameOffice);
+      cardDiv.appendChild(nameOffice);
 
       var addressOffice = document.createElement("p");
       addressOffice.id = "addressOffice";
       addressOffice.innerHTML = (data.data[i].visit_address.street + ", " + data.data[i].visit_address.city + " " + data.data[i].visit_address.zip);
-      columnDiv.appendChild(addressOffice);
+      cardDiv.appendChild(addressOffice);
 
 
       var phoneNumber = document.createElement("p");
       phoneNumber.id = "phoneNumber";
       phoneNumber.innerHTML = data.data[i].phones[1].number;
-      columnDiv.appendChild(phoneNumber);
+      cardDiv.appendChild(phoneNumber);
 
 
 
       var doctorRec = document.createElement("p");
       doctorRec.id = "doctorRec";
       doctorRec.innerHTML = (data.data[i].doctors[0].profile.first_name + " " + data.data[i].doctors[0].profile.last_name + " " + data.data[i].doctors[0].specialties[0].actor);
-      columnDiv.appendChild(doctorRec);
+      cardDiv.appendChild(doctorRec);
 
+      columnDiv.appendChild(cardDiv);
       document.getElementById("doctorOffices").appendChild(columnDiv);
+
+      console.log(document.getElementById("doctorOffices"));
     }
 
 

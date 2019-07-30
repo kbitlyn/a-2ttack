@@ -19,7 +19,8 @@ h6 {
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  padding: 5px;
+  /* 0 10px; */
 }
 
 /* remove extra left and right margins */
@@ -115,20 +116,20 @@ h6 {
 
 #nameOffice {
   font-family: "Press Start 2P";
-  font-size: 19px;
+  font-size: 14px;
 }
 
 #addressOffice {
   font-family: "Press Start 2P";
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #phoneNumber {
   font-family: "Press Start 2P";
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #doctorRec {
   font-family: "Press Start 2P";
-  font-size: 12px;
+  font-size: 11px;
 }
