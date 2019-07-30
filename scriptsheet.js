@@ -48,20 +48,7 @@ function showPosition(position) {
 
 function findOffices(latitude,longitude) {
   var path = "https://api.betterdoctor.com/2016-03-01/practices?name=mental%20health&sort=full-name-asc&skip=0&limit=4&user_key=ec9d4f25fb4c4d5b47225096d639bca0&user_location=#{latitude},#{longitude}&location=#{latitude},#{longitude},50"
-  console.log(path);
-}
-
-function initMap() {
-  var map;
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
-
-function init() {
-  fetchJSON('doctors.json', function(data) {
+  fetchJSON(path, function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
       var columnDiv = document.createElement("div");
@@ -94,6 +81,19 @@ function init() {
       document.getElementById("doctorOffices").appendChild(columnDiv);
     }
   });
+}
+
+function initMap() {
+  var map;
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+function init() {
+
 }
 
 window.onload = init;
