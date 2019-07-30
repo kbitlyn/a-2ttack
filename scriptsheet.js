@@ -44,27 +44,42 @@ function initMap() {
 function init() {
   initMap();
   fetchJSON('doctors.json', function(data) {
-    console.log(data.data[0].name)
-    console.log(data.data[0].visit_address.lat)
-    console.log(data.data[0].visit_address.lon)
-    console.log(data.data[0].visit_address.street)
-    console.log(data.data[0].visit_address.zip)
-    console.log(data.data[0].phones[1].number)
-    console.log(data.data[0].total_doctors)
-    console.log(data.data[0].doctors[0].profile.first_name)
-    console.log(data.data[0].doctors[0].profile.last_name)
 
-    // for (var i = 0; i < data.data.length; i++) {
-    //   var officeName = document.createElement('p');
-    //   officeName.style. = data.data[i].name;
-    //   document.getElementById('showClinic').appendChild(officeName);
-    // }
-    document.getElementById("nameOffice").innerHTML = data.data[0].name;
-    document.getElementById('addressOffice').innerHTML = data.data[0].visit_address.street;
-    document.getElementById('addressZip').innerHTML = data.data[0].visit_address.zip;
-    document.getElementById('phoneNumber').innerHTML = data.data[0].phones[1].number;
-    document.getElementById('firstName').innerHTML = data.data[0].doctors[0].profile.first_name;
-    document.getElementById('lastName').innerHTML = data.data[0].doctors[0].profile.last_name;
+    for (var i = 0; i < data.data.length; i++) {
+
+      var columnDiv = document.createElement("div");
+      columnDiv.className = "column";
+
+      var cardDiv = document.createElement("div");
+      cardDiv.className = "card";
+
+      var nameOffice = document.createElement("h3");
+      nameOffice.id = "nameOffice";
+      nameOffice.innerHTML = data.data[i].name;
+      columnDiv.appendChild(nameOffice);
+
+      var addressOffice = document.createElement("p");
+      addressOffice.id = "addressOffice";
+      addressOffice.innerHTML = (data.data[i].visit_address.street + ", " + data.data[i].visit_address.city + " " + data.data[i].visit_address.zip);
+      columnDiv.appendChild(addressOffice);
+
+
+      var phoneNumber = document.createElement("p");
+      phoneNumber.id = "phoneNumber";
+      phoneNumber.innerHTML = data.data[i].phones[1].number;
+      columnDiv.appendChild(phoneNumber);
+
+
+
+      var doctorRec = document.createElement("p");
+      doctorRec.id = "doctorRec";
+      doctorRec.innerHTML = (data.data[i].doctors[0].profile.first_name + " " + data.data[i].doctors[0].profile.last_name + " " + data.data[i].doctors[0].specialties[0].actor);
+      columnDiv.appendChild(doctorRec);
+
+      document.getElementById("doctorOffices").appendChild(columnDiv);
+    }
+
+
 
 
 

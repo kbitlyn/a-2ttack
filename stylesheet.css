@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 h1 {
   text-align: center;
   font-size: 40px;
@@ -10,16 +15,40 @@ h6 {
   font-family: 'Press Start 2P', cursive;
 }
 
-table {
-  font-family: "Press Start 2P", cursive;
-  font-size: 16px;
-  border-collapse: collapse;
+/* float 4 columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
 
-.smallFont {
+/* remove extra left and right margins */
+.row {
+  margin: 0 -5px;
+}
+
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsive colums */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* style the cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
   text-align: center;
-  font-size: 16px;
-  font-family: "Press Start 2p", cursive;
+  background-color: #f1f1f1;
 }
 
 .center {
@@ -29,7 +58,6 @@ table {
   height: 50%;
   width: 50%;
   padding-top: 50px;
-
 }
 
 .container {
@@ -39,9 +67,6 @@ table {
   margin-bottom: 30px;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .img-container {
   float: left;
@@ -88,61 +113,22 @@ table {
   text-align: center;
 }
 
-#showClinic {
-  -webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
-    column-count: 4;
+#nameOffice {
+  font-family: "Press Start 2P";
+  font-size: 19px;
 }
 
-  /* body {
-			min-width: 630px;
-		} */
+#addressOffice {
+  font-family: "Press Start 2P";
+  font-size: 12px;
+}
 
+#phoneNumber {
+  font-family: "Press Start 2P";
+  font-size: 12px;
+}
 
-		/* #container {
-			padding-left: 200px;
-			padding-right: 190px;
-		}
-
-		#container .column {
-			position: relative;
-			float: left;
-		}
-
-		#center {
-			padding: 10px 20px;
-			width: 100%;
-		}
-
-		#left {
-			width: 180px;
-			padding: 0 10px;
-			right: 240px;
-			margin-left: -100%;
-		}
-
-		#right {
-			width: 130px;
-			padding: 0 10px;
-			margin-right: -100%;
-		}
-
-		#footer {
-			clear: both;
-		}
-
-    #container {
-			overflow: hidden;
-		}
-
-		#container .column {
-			padding-bottom: 1001em;
-			margin-bottom: -1000em;
-		}
-
-    body {
-  			margin: 0;
-  			padding: 0;
-  			font-family:Sans-serif;
-  			line-height: 1.5em;
-  		} */
+#doctorRec {
+  font-family: "Press Start 2P";
+  font-size: 12px;
+}

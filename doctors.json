@@ -202,6 +202,1028 @@
           "npi": "1528003241"
         }
       ]
+    },
+    {
+      "location_slug": "ca-san-mateo",
+      "within_search_area": true,
+      "distance": 16.951775663081126,
+      "lat": 37.545723,
+      "lon": -122.32132,
+      "uid": "f3fcbbf179f68bec6954da5d857dbf28",
+      "name": "Central County Mental Health",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "San Mateo",
+        "lat": 37.545723,
+        "lon": -122.32132,
+        "state": "CA",
+        "state_long": "California",
+        "street": "1950 Alameda De Las Pulgas",
+        "zip": "94403"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "6505729347",
+          "type": "fax"
+        },
+        {
+          "number": "6505732683",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 4,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/f3fcbbf179f68bec6954da5d857dbf28/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Brendan",
+            "middle_name": "Edward",
+            "last_name": "Scherer",
+            "slug": "brendan-scherer",
+            "title": "MD",
+            "image_url": "https://asset2.betterdoctor.com/assets/general_doctor_male.png",
+            "gender": "male",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Brendan Scherer, MD practices medicine at San mateo, California, specializing in psychiatry.\n\nDr. Scherer is licensed to see patients in California.\n\nDr. Scherer has been found during an automated background check to be clear of any malpractice history and holds one or more active medical licenses."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A76880",
+              "state": "CA"
+            }
+          ],
+          "uid": "951cebcd354632dc58282c2b9bd6d001",
+          "npi": "1598930208"
+        },
+        {
+          "educations": [
+            {
+              "school": "David Geffen School of Medicine at UCLA",
+              "degree": "MD"
+            },
+            {
+              "school": "Cedars-Sinai Medical Center",
+              "graduation_year": "1991",
+              "degree": "Residency"
+            }
+          ],
+          "profile": {
+            "first_name": "Kathleen",
+            "last_name": "Akiyama",
+            "slug": "kathleen-akiyama",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Kathleen Akiyama, MD specializes in psychiatry, and currently sees patients in San mateo, California.\n\nDr. Akiyama graduated from David Geffen School Of Medicine At Ucla and is licensed to see patients in California.\n\nIn addition to having active medical licenses, Dr. Akiyama has passed an automated background check which looked at elements including medical license status and malpractice screening (no history found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "state": "CA"
+            },
+            {
+              "number": "G64279",
+              "state": "CA"
+            }
+          ],
+          "uid": "1ad892c9bbd72bd08c5ffc4190338b09",
+          "npi": "1194886879"
+        },
+        {
+          "educations": [
+            {
+              "school": "Harvard University"
+            }
+          ],
+          "profile": {
+            "first_name": "Barbara",
+            "last_name": "Yates",
+            "slug": "barbara-yates",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Barbara Yates, MD sees patients in San mateo, California, specializing in psychiatry.\n\nDr. Yates graduated from Harvard University and is licensed to treat patients in California.\n\nDr. Yates has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "G072285",
+              "state": "CA"
+            }
+          ],
+          "uid": "ee0ac9bb224be8169f18793418ea7063",
+          "npi": "1619194743"
+        },
+        {
+          "educations": [
+            {
+              "school": "Tufts University School of Medicine",
+              "degree": "MD"
+            },
+            {
+              "school": "California Pacific Medical Center",
+              "graduation_year": "1995",
+              "degree": "Residency"
+            }
+          ],
+          "profile": {
+            "first_name": "D.",
+            "middle_name": "Todd",
+            "last_name": "Feeley",
+            "slug": "d-feeley",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/assets/general_doctor_male.png",
+            "gender": "male",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. D. Feeley, MD is one of the country's best rated doctors. His specialties include psychiatry and he currently practices medicine at San francisco, California and San mateo, California.\n\nDr. Feeley is a graduate of Tufts University School Of Medicine and is licensed to see patients in California.\n\nBased on his network, credentials and experience, Dr. Feeley has been rated among the top 20% of all doctors in the United States.\n\nIn addition, Dr. Feeley has been found to hold one or more active medical licenses, and successfully passed a malpractice history screening."
+          },
+          "ratings": [
+            {
+              "active": true,
+              "provider": "yelp",
+              "provider_uid": "jennifer-feeley-mft-san-francisco",
+              "provider_url": "http://www.yelp.com/biz/jennifer-feeley-mft-san-francisco"
+            },
+            {
+              "active": true,
+              "provider": "betterdoctor",
+              "provider_uid": "1c33e43f2601844ce5d5e7ad1542f753",
+              "rating": 4,
+              "review_count": 0,
+              "image_url_small": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-4.0.png",
+              "image_url_small_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-4.0@2x.png",
+              "image_url_large": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-4.0.png",
+              "image_url_large_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-4.0@2x.png"
+            }
+          ],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "claims": [
+            {
+              "hcpcs": "90862",
+              "hcpcs_description": "Medication management",
+              "service_cnt": 110,
+              "bene_uniq_cnt": 29,
+              "avg_allowed_amt": 68.990909091,
+              "avg_charge_amt": 190.51872727,
+              "avg_payment_amt": 28.893181818
+            },
+            {
+              "hcpcs": "99213",
+              "hcpcs_description": "Office / outpatient visit, established patient, 15 minutes",
+              "service_cnt": 20,
+              "bene_uniq_cnt": 16,
+              "avg_allowed_amt": 84.09,
+              "avg_charge_amt": 207.8325,
+              "avg_payment_amt": 50.46
+            }
+          ],
+          "licenses": [
+            {
+              "state": "CA"
+            },
+            {
+              "number": "G75366",
+              "state": "CA"
+            }
+          ],
+          "uid": "1c33e43f2601844ce5d5e7ad1542f753",
+          "npi": "1548351158"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-petaluma",
+      "within_search_area": true,
+      "distance": 38.7310514824545,
+      "lat": 38.27353,
+      "lon": -122.66399,
+      "uid": "4757bd07ad4d40c15e59567c42614c5e",
+      "name": "Community Mental Health Center",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "Petaluma",
+        "lat": 38.27353,
+        "lon": -122.66399,
+        "state": "CA",
+        "state_long": "California",
+        "street": "1360 N McDowell Blvd",
+        "street2": "Ste 1A",
+        "zip": "94954"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "7077695276",
+          "type": "fax"
+        },
+        {
+          "number": "7077695270",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/4757bd07ad4d40c15e59567c42614c5e/doctors",
+      "doctors": [
+        {
+          "educations": [
+            {
+              "school": "State University of New York (suny) Brooklyn"
+            }
+          ],
+          "profile": {
+            "first_name": "Sophie",
+            "last_name": "Aneson-MacLeon",
+            "slug": "sophie-aneson",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Sophie Aneson-MacLeon, MD practices medicine at Petaluma, California and specializes in psychiatry.\n\nDr. Aneson-MacLeon graduated from State University Of New York (suny) Brooklyn and is licensed to practice medicine at California.\n\nIn addition to having active medical licenses, Dr. Aneson-MacLeon has been found during an automated background check to be clear of any malpractice history and holds one or more active medical licenses."
+          },
+          "ratings": [
+            {
+              "active": true,
+              "provider": "betterdoctor",
+              "provider_uid": "bc4ac86ccb03539f3f02718649caa793",
+              "rating": 3.5,
+              "review_count": 0,
+              "image_url_small": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-3.5.png",
+              "image_url_small_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-small-3.5@2x.png",
+              "image_url_large": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-3.5.png",
+              "image_url_large_2x": "https://asset2.betterdoctor.com/assets/consumer/stars/stars-large-3.5@2x.png"
+            }
+          ],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "G49065",
+              "state": "CA"
+            }
+          ],
+          "uid": "bc4ac86ccb03539f3f02718649caa793",
+          "npi": "1316007156"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-antioch",
+      "within_search_area": true,
+      "distance": 46.1092733982227,
+      "lat": 37.98702,
+      "lon": -121.78169,
+      "uid": "98a137c96774a6f450f599aa2d76e4fe",
+      "name": "East County Mental Health Associates Ecmha",
+      "accepts_new_patients": true,
+      "insurance_uids": [
+        "aetna-aetnahmo",
+        "aetna-aetnachoiceposii",
+        "aetna-aetnahmodeductibleplancamembersonly",
+        "aetna-aetnasignatureadministratorsppo",
+        "aetna-aetnamanagedchoiceposopenaccess",
+        "gwhcigna-greatwestppo",
+        "firsthealthcoventryhealthcare-firsthealthppo"
+      ],
+      "visit_address": {
+        "city": "Antioch",
+        "lat": 37.98702,
+        "lon": -121.78169,
+        "state": "CA",
+        "state_long": "California",
+        "street": "3432 Hillcrest Ave",
+        "street2": "Ste 175",
+        "zip": "94531"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "9257789014",
+          "type": "fax"
+        },
+        {
+          "number": "9257781444",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/98a137c96774a6f450f599aa2d76e4fe/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Ronald",
+            "middle_name": "Lawrence",
+            "last_name": "Leon",
+            "slug": "ronald-leon-md",
+            "title": "MD",
+            "image_url": "https://asset4.betterdoctor.com/images/55a879a3f228666c400011dd-2_thumbnail.jpg",
+            "gender": "male",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Ronald Leon, MD specializes in psychiatry, and currently practices medicine at Antioch, California and Pittsburg, California.\n\n\n\nIn addition to having active medical licenses, Dr. Leon has been found to hold one or more active medical licenses, and successfully passed a malpractice history screening."
+          },
+          "ratings": [
+            {
+              "active": true,
+              "provider": "yelp",
+              "provider_uid": "ronald-leon-md-antioch",
+              "provider_url": "http://www.yelp.com/biz/ronald-leon-md-antioch"
+            }
+          ],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [],
+          "uid": "3f51402c2d46ca150bf69ca7ddeeef2d",
+          "npi": "1467418830"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-san-rafael",
+      "within_search_area": true,
+      "distance": 14.374901044883662,
+      "lat": 37.96106,
+      "lon": -122.50144,
+      "uid": "46953f3708ea30ebb361512fbb5a1a27",
+      "name": "Marin Community Mental Health",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "San Rafael",
+        "lat": 37.96106,
+        "lon": -122.50144,
+        "state": "CA",
+        "state_long": "California",
+        "street": "3270 Kerner Blvd",
+        "street2": "Ste B",
+        "zip": "94901"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "4154733850",
+          "type": "fax"
+        },
+        {
+          "number": "4154732100",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/46953f3708ea30ebb361512fbb5a1a27/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Rebeca",
+            "middle_name": "Leticia",
+            "last_name": "Quezada",
+            "slug": "rebeca-quezada",
+            "title": "MD",
+            "image_url": "https://asset2.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Rebeca Quezada, MD specializes in psychiatry, and currently treats patients in San rafael, California.\n\nDr. Quezada is licensed to see patients in California.\n\nIn addition to having active medical licenses, Dr. Quezada has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A80065",
+              "state": "CA"
+            }
+          ],
+          "uid": "88a31002a48afbd1c5a2c56140bece58",
+          "npi": "1477641033"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-santa-cruz",
+      "within_search_area": true,
+      "distance": 61.591519283055234,
+      "lat": 36.978157,
+      "lon": -122.011645,
+      "uid": "73fb0a6c7895d48fe093854aac1fbe59",
+      "name": "Mental Health Client Action Network",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "Santa Cruz",
+        "lat": 36.978157,
+        "lon": -122.011645,
+        "state": "CA",
+        "state_long": "California",
+        "street": "1051 Cayuga St",
+        "zip": "95062"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "8314690462",
+          "type": "business_landline"
+        },
+        {
+          "number": "8314699160",
+          "type": "business_fax"
+        },
+        {
+          "number": "8314690462",
+          "type": "landline"
+        },
+        {
+          "number": "8314699160",
+          "type": "fax"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/73fb0a6c7895d48fe093854aac1fbe59/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Miryam",
+            "last_name": "Weber",
+            "slug": "miryam-weber",
+            "title": "MD",
+            "image_url": "https://asset1.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Miryam Weber, MD--specialist in psychiatry--currently practices medicine at Santa cruz, California.\n\nDr. Weber is licensed to treat patients in California.\n\nIn addition to having active medical licenses, Dr. Weber has passed an automated background check which looked at elements including medical license status and malpractice screening (no history found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "state": "CA"
+            },
+            {
+              "number": "A72452",
+              "state": "CA"
+            }
+          ],
+          "uid": "dd9979f9ddd2094cbc3a817bfdf7dbf0",
+          "npi": "1750496774"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-livingston",
+      "within_search_area": false,
+      "distance": 119.93217667112863,
+      "lat": 37.38641,
+      "lon": -120.72279,
+      "uid": "f10198248f62d4cec84f4dc22b860947",
+      "name": "Merced County Department Of Mental Health Livingston Alcohol And Drug",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "Livingston",
+        "lat": 37.38641,
+        "lon": -120.72279,
+        "state": "CA",
+        "state_long": "California",
+        "street": "1471 B St",
+        "street2": "Ste N",
+        "zip": "95334"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "2093944166",
+          "type": "fax"
+        },
+        {
+          "number": "2093944032",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/f10198248f62d4cec84f4dc22b860947/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Anupinder",
+            "middle_name": "K",
+            "last_name": "Sahota",
+            "slug": "anupinder-sahota",
+            "title": "MD",
+            "image_url": "https://asset2.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Anupinder Sahota, MD--specialist in psychiatry--currently treats patients in Merced, California and Livingston, California.\n\nDr. Sahota is licensed to treat patients in California.\n\nDr. Sahota has been found to hold one or more active medical licenses, and successfully passed a malpractice history screening."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "claims": [
+            {
+              "hcpcs": "99214",
+              "hcpcs_description": "Office / outpatient visit, established patient, 25 minutes",
+              "service_cnt": 273,
+              "bene_uniq_cnt": 139,
+              "avg_allowed_amt": 108.06,
+              "avg_charge_amt": 187.98,
+              "avg_payment_amt": 62.537912088
+            },
+            {
+              "hcpcs": "99214",
+              "hcpcs_description": "Office / outpatient visit, established patient, 25 minutes",
+              "service_cnt": 254,
+              "bene_uniq_cnt": 137,
+              "avg_allowed_amt": 77.78,
+              "avg_charge_amt": 187.98,
+              "avg_payment_amt": 29.966692913
+            },
+            {
+              "hcpcs": "99215",
+              "hcpcs_description": "Office / outpatient visit, established patient, 40 minutes",
+              "service_cnt": 29,
+              "bene_uniq_cnt": 29,
+              "avg_allowed_amt": 144.84,
+              "avg_charge_amt": 192.8,
+              "avg_payment_amt": 80.247241379
+            },
+            {
+              "hcpcs": "99215",
+              "hcpcs_description": "Office / outpatient visit, established patient, 40 minutes",
+              "service_cnt": 17,
+              "bene_uniq_cnt": 17,
+              "avg_allowed_amt": 109.39,
+              "avg_charge_amt": 192.8,
+              "avg_payment_amt": 53.05
+            },
+            {
+              "hcpcs": "99213",
+              "hcpcs_description": "Office / outpatient visit, established patient, 15 minutes",
+              "service_cnt": 11,
+              "bene_uniq_cnt": 11,
+              "avg_allowed_amt": 73.15,
+              "avg_charge_amt": 115.68,
+              "avg_payment_amt": 42.193636364
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A88174",
+              "state": "CA"
+            }
+          ],
+          "uid": "7923a17c76a5a65f262e6a3894079055",
+          "npi": "1811009608"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-stockton",
+      "within_search_area": true,
+      "distance": 77.02892553276564,
+      "lat": 37.98531,
+      "lon": -121.31982,
+      "uid": "7757e38b8a63d0a82e899f39f7e05043",
+      "name": "San Joaquin County Mental Health Departm",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "Stockton",
+        "lat": 37.98531,
+        "lon": -121.31982,
+        "state": "CA",
+        "state_long": "California",
+        "street": "4422 N Pershing Ave",
+        "street2": "Ste D2",
+        "zip": "95207"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "2099538478",
+          "type": "fax"
+        },
+        {
+          "number": "2099538843",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/7757e38b8a63d0a82e899f39f7e05043/doctors",
+      "doctors": [
+        {
+          "educations": [
+            {
+              "school": "University of Punjab"
+            }
+          ],
+          "profile": {
+            "first_name": "Syed",
+            "last_name": "Kazmi",
+            "slug": "syed-kazmi",
+            "title": "MD",
+            "image_url": "https://asset1.betterdoctor.com/assets/general_doctor_male.png",
+            "gender": "male",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Syed Kazmi, MD--specialist in psychiatry--currently treats patients in Stockton, California.\n\nDr. Kazmi graduated from University Of Punjab and is licensed to treat patients in California.\n\nIn addition to having active medical licenses, Dr. Kazmi has been found to hold one or more active medical licenses, and successfully passed a malpractice history screening."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "claims": [
+            {
+              "hcpcs": "90862",
+              "hcpcs_description": "Medication management",
+              "service_cnt": 302,
+              "bene_uniq_cnt": 97,
+              "avg_allowed_amt": 45.31,
+              "avg_charge_amt": 193.57768212,
+              "avg_payment_amt": 18.405496689
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A33815",
+              "state": "CA"
+            }
+          ],
+          "uid": "730e7c67ab2095327e329371fef865f9",
+          "npi": "1437310273"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-watsonville",
+      "within_search_area": true,
+      "distance": 73.75997687239467,
+      "lat": 36.926509,
+      "lon": -121.764503,
+      "uid": "193df87399b7725a8820e8f12f2fb194",
+      "name": "South County Mental Health",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "Watsonville",
+        "lat": 36.926509,
+        "lon": -121.764503,
+        "state": "CA",
+        "state_long": "California",
+        "street": "1430 Freedom Blvd",
+        "street2": "Ste 100",
+        "zip": "95076"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "8317638282",
+          "type": "fax"
+        },
+        {
+          "number": "8317638200",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/193df87399b7725a8820e8f12f2fb194/doctors",
+      "doctors": [
+        {
+          "educations": [
+            {
+              "school": "University of Wisconsin"
+            }
+          ],
+          "profile": {
+            "first_name": "Janet",
+            "last_name": "Medenwald",
+            "slug": "janet-medenwald-md",
+            "title": "MD",
+            "image_url": "https://asset3.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Janet Medenwald, MD practices medicine at Watsonville, California and Santa cruz, California and specializes in psychiatry.\n\nDr. Medenwald graduated from University Of Wisconsin and is licensed to practice medicine at California.\n\nIn addition to having active medical licenses, Dr. Medenwald has passed an automated background check which looked at elements including medical license status and malpractice screening (no history found)."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "claims": [
+            {
+              "hcpcs": "90862",
+              "hcpcs_description": "Medication management",
+              "service_cnt": 408,
+              "bene_uniq_cnt": 77,
+              "avg_allowed_amt": 60.205563725,
+              "avg_charge_amt": 164.26480392,
+              "avg_payment_amt": 31.439656863
+            }
+          ],
+          "licenses": [
+            {
+              "number": "G58422",
+              "state": "CA"
+            }
+          ],
+          "uid": "59d85a4265fdb186273e7a3cb2b0fe80",
+          "npi": "1770664286"
+        }
+      ]
+    },
+    {
+      "location_slug": "ca-san-pablo",
+      "within_search_area": true,
+      "distance": 14.294788849905316,
+      "lat": 37.96576,
+      "lon": -122.33849,
+      "uid": "729a86f759cab73af80c7c25f237abdd",
+      "name": "West County Adult Mental Health",
+      "accepts_new_patients": true,
+      "insurance_uids": [],
+      "visit_address": {
+        "city": "San Pablo",
+        "lat": 37.96576,
+        "lon": -122.33849,
+        "state": "CA",
+        "state_long": "California",
+        "street": "2523 El Portal Dr",
+        "street2": "Ste 103",
+        "zip": "94806"
+      },
+      "office_hours": [],
+      "phones": [
+        {
+          "number": "5102153731",
+          "type": "fax"
+        },
+        {
+          "number": "5102153730",
+          "type": "landline"
+        }
+      ],
+      "languages": [
+        {
+          "name": "English",
+          "code": "en"
+        }
+      ],
+      "total_doctors": 1,
+      "doctors_pagination_url": "https://api.betterdoctor.com/2016-03-01/practices/729a86f759cab73af80c7c25f237abdd/doctors",
+      "doctors": [
+        {
+          "educations": [],
+          "profile": {
+            "first_name": "Vinod",
+            "last_name": "Sharma",
+            "slug": "vinod-sharma-3",
+            "title": "MD",
+            "image_url": "https://asset1.betterdoctor.com/assets/general_doctor_female.png",
+            "gender": "female",
+            "languages": [
+              {
+                "name": "English",
+                "code": "en"
+              }
+            ],
+            "bio": "Dr. Vinod Sharma, MD specializes in psychiatry, and currently treats patients in San pablo, California.\n\nDr. Sharma is licensed to treat patients in California.\n\nIn addition to having active medical licenses, Dr. Sharma has been found to hold one or more active medical licenses, and successfully passed a malpractice history screening."
+          },
+          "ratings": [],
+          "insurances": [],
+          "specialties": [
+            {
+              "uid": "psychiatrist",
+              "name": "Psychiatry",
+              "description": "Specializes in the diagnosis and treatment of mental disorders.",
+              "category": "medical",
+              "actor": "Psychiatrist",
+              "actors": "Psychiatrists"
+            }
+          ],
+          "licenses": [
+            {
+              "number": "A 101192",
+              "state": "CA"
+            },
+            {
+              "state": "CA"
+            }
+          ],
+          "uid": "6f760f3e9f840cae52aed8aae2f0707a",
+          "npi": "1629264049"
+        }
+      ]
     }
   ]
 }
