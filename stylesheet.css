@@ -82,6 +82,11 @@ h6 {
   display: inline-block;
 }
 
+.doctorRec {
+  font-family: "Press Start 2P";
+  font-size: 11px;
+}
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -125,11 +130,6 @@ h6 {
 }
 
 #phoneNumber {
-  font-family: "Press Start 2P";
-  font-size: 11px;
-}
-
-#doctorRec {
   font-family: "Press Start 2P";
   font-size: 11px;
 }

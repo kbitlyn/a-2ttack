@@ -51,7 +51,6 @@ function findOffices(latitude,longitude) {
   var location = "&location=" + latitude.toString() + "," + longitude.toString() + ",50";
   var userLocation = "&user_location=" + latitude.toString() + "," + longitude.toString();
   var path = "https://api.betterdoctor.com/2016-03-01/practices?name=mental%20health&sort=full-name-asc&skip=0&limit=4&user_key=ec9d4f25fb4c4d5b47225096d639bca0" + location + userLocation;
-  console.log(path);
   fetchJSON(path, function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
@@ -76,10 +75,20 @@ function findOffices(latitude,longitude) {
       phoneNumber.innerHTML = data.data[i].phones[1].number;
       cardDiv.appendChild(phoneNumber);
 
-      var doctorRec = document.createElement("p");
-      doctorRec.id = "doctorRec";
-      doctorRec.innerHTML = (data.data[i].doctors[0].profile.first_name + " " + data.data[i].doctors[0].profile.last_name + " " + data.data[i].doctors[0].specialties[0].actor);
-      cardDiv.appendChild(doctorRec);
+      if (data.data[i].total_doctors > 1) {
+        for (var j = 0; j < data.data[i].total_doctors; j++) {
+          console.log(data.data[i].doctors[j].profile);
+          var doctorRec = document.createElement("p");
+          doctorRec.className = "doctorRec";
+          doctorRec.innerHTML = (data.data[i].doctors[j].profile.first_name + " " + data.data[i].doctors[j].profile.last_name + " " + data.data[i].doctors[j].specialties[0].actor);
+          cardDiv.appendChild(doctorRec);
+        }
+      } else {
+        var doctorRec = document.createElement("p");
+        doctorRec.className = "doctorRec";
+        doctorRec.innerHTML = (data.data[i].doctors[0].profile.first_name + " " + data.data[i].doctors[0].profile.last_name + " " + data.data[i].doctors[0].specialties[0].actor);
+        cardDiv.appendChild(doctorRec);
+      }
 
       columnDiv.appendChild(cardDiv);
       document.getElementById("doctorOffices").appendChild(columnDiv);
