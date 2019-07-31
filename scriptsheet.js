@@ -39,8 +39,8 @@ function toggleInfo() {
     showCredits.style.display = "none";
   } else {
     showCredits.style.display = "block";
-    var showEverything = document.getElementById("creditsBody");
-    showEverything.scrollIntoView();
+    var showCreditsEverything = document.getElementById("creditsBody");
+    showCreditsEverything.scrollIntoView();
   }
 }
 
@@ -129,6 +129,8 @@ function findOffices(latitude,longitude) {
       document.getElementById("doctorOffices").appendChild(columnDiv);
 
       document.getElementById("findHelpButton").disabled = true;
+      var showClinics = document.getElementById("doctorOffices");
+      showClinics.scrollIntoView();
     }
   });
 }
