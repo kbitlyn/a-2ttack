@@ -9,10 +9,10 @@ function scrollFunction() {
   }
 }
 
-document.getElementById("findHelpButton").onclick = function() {
-  //disabled
-  this.disabled = true;
-}
+// document.getElementById("findHelpButton").onclick = function() {
+//   //disabled
+//   this.disabled = true;
+// }
 
 // $(document).ready(function(
 // ){
