@@ -39,6 +39,8 @@ function toggleInfo() {
     showCredits.style.display = "none";
   } else {
     showCredits.style.display = "block";
+    var showEverything = document.getElementById("creditsBody");
+    showEverything.scrollIntoView();
   }
 }
 
