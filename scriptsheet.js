@@ -9,10 +9,6 @@ function scrollFunction() {
   }
 }
 
-document.getElementById("findHelpButton").onclick = function() {
-  //disabled
-  this.disabled = true;
-}
 
 // $(document).ready(function(
 // ){
@@ -129,6 +125,8 @@ function findOffices(latitude,longitude) {
 
       columnDiv.appendChild(cardDiv);
       document.getElementById("doctorOffices").appendChild(columnDiv);
+
+      document.getElementById("findHelpButton").disabled = true;
     }
   });
 }
