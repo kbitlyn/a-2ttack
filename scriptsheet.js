@@ -9,6 +9,34 @@ function scrollFunction() {
   }
 }
 
+document.getElementById("findHelpButton").onclick = function(
+  //disabled
+  this.disabled = true;
+)
+
+// $(document).ready(function(
+// ){
+//   $("#findHelpButton").one("click",function(){
+//     $(this).
+//
+//   })
+// })
+
+$(function(){
+  var count = 3,
+      $btn = $('input[type="img"]'); //Or which ever you want
+      //Change the label of $btn
+      $btn.val($btn.val()+' ('+count+')')
+
+  $btn.click(function(){
+      $btn.val($btn.val().replace(count,count-1));
+      count--;
+      if(count==0) {
+            return !$btn.attr('disabled','disabled');
+      }
+  })
+})
+
 function toggleInfo() {
   var showCredits = document.getElementById("creditsBody");
   if (showCredits.style.display === "block") {
@@ -39,14 +67,14 @@ function fetchJSON(path, callback) {
 
 }
 
-function getLocation() {
-  var x = document.getElementById("demo");
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+// function getLocation() {
+//   var x = document.getElementById("demo");
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(showPosition);
+//   } else {
+//     x.innerHTML = "Geolocation is not supported by this browser.";
+//   }
+// }
 
 function showPosition(position) {
   var x = document.getElementById("demo");
