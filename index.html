@@ -45,32 +45,39 @@
 
       </h6>
 
-      <div class="clearfix" align:"center">
+      <div class="clearfix" align:"center"> <!-- the buttons to scroll through the page-->
 
+        <!--find help button-->
         <div class="img-container">
           <input type="image" src= "findHelp8bit.png" onClick="document.getElementById('map').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
+        <!-- resources button -->
         <div class="img-container">
           <input type="image" src= "resources8bit.png" onClick="document.getElementById('resources').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
+        <!-- donate button -->
         <div class="img-container">
           <input type="image" src= "donate8bit.png" onClick="document.getElementById('donate').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
+        <!-- about button -->
         <div class="img-container">
           <input type="image" src= "about8bit.png" onClick="document.getElementById('about').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
+        <!-- credits -->
         <div class="img-container">
           <input type="image" src= "credits8bit.png" onClick="document.getElementById('credits').scrollIntoView();" style="width:60%;height:50%"/>
         </div>
 
       </div>
 
+      <!-- calls the topFunction() from js file and puts a scroll to top button on the bottom right corner -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+      <!-- embeds the scratch game -->
       <div id="scratchGames" class="container">
         <iframe src="https://scratch.mit.edu/projects/322157574/embed" allowtransparency="true" width="850" height="700" frameborder="0" scrolling="no" allowfullscreen></iframe>
       </div>
@@ -81,40 +88,26 @@
       <p></p>
       <br></br>
 
-      <!-- <style>
-        #map {
-          height: 600px;
-          width: 88%;
-          text-align: center;
-        }
-      </style> -->
-
+      <!-- get's the user's geolocation-->
       <div id="map"></div>
 
       <h1>find mental health clinics near you</h1>
 
+      <!-- finds nearby clinics within a 50 mi. radius -->
       <input id="findHelpButton" type="image" src="findHelp8bit.png" alt="find clinics near you" onclick="getLocation()";"limit()"; class="center" style="width:20%;height:15%"/>
       <div id='demo'></div>
 
-      <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Bar"> -->
-
       <br></br>
 
+      <!-- displays the cards with the nearby offices' info -->
       <div class="row">
         <div id="doctorOffices">
-          <!-- <div class="column">
-            <div class="card">
-              <h3 id="nameOffice"></h3>
-              <p id="addressOffice"></p>
-              <p id="phoneNumber"></p>
-              <p id="doctorRec"></p>
-
-            </div>
-
-          </div> -->
+          <!-- findOffices() in js file will create the column/card class
+          and the name, address, phone #, and rec'd doctors -->
         </div>
       </div>
 
+      <!-- Resources id -->
       <div id="resources">
         <h1>
           ~Resources~
@@ -135,6 +128,7 @@
         </h6>
       </div>
 
+      <!-- donate id -->
       <div id="donate">
           <h1>
             <br>
@@ -156,6 +150,7 @@
         </h6>
       </div>
 
+      <!-- about id -->
       <div id="about">
 
 
@@ -190,12 +185,16 @@
       </div>
 
       <div id="credits">
+
+          <!-- hides the credits when windo is loaded-->
           <h1 onclick="toggleInfo()">
             <br>
               <u>Credits</u> v
 
             </br>
           </h1>
+
+          <!--will appear/disappear when credits header is clicked-->
           <div id="creditsBody">
             <h6>
               <br>
@@ -214,6 +213,7 @@
 
     </div>
 </div>
+
   <script>
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};

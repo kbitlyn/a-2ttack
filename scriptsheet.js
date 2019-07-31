@@ -9,36 +9,15 @@ function scrollFunction() {
   }
 }
 
-
-// $(document).ready(function(
-// ){
-//   $("#findHelpButton").one("click",function(){
-//     $(this).
-//
-//   })
-// })
-
-// $(function(){
-//   var count = 3,
-//       $btn = $('input[type="img"]'); //Or which ever you want
-//       //Change the label of $btn
-//       $btn.val($btn.val()+' ('+count+')')
-//
-//   $btn.click(function(){
-//       $btn.val($btn.val().replace(count,count-1));
-//       count--;
-//       if(count==0) {
-//             return !$btn.attr('disabled','disabled');
-//       }
-//   })
-// })
-
+//When user loads page, disappear
 function toggleInfo() {
   var showCredits = document.getElementById("creditsBody");
   if (showCredits.style.display === "block") {
     showCredits.style.display = "none";
   } else {
+    //if body is hidden and about is clicked, show body
     showCredits.style.display = "block";
+    // when about is clicked, scroll to view about body
     var showCreditsEverything = document.getElementById("creditsBody");
     showCreditsEverything.scrollIntoView();
   }
@@ -65,6 +44,7 @@ function fetchJSON(path, callback) {
 
 }
 
+//get's the geolocation of user
 function getLocation() {
   var x = document.getElementById("demo");
   if (navigator.geolocation) {
@@ -74,6 +54,7 @@ function getLocation() {
   }
 }
 
+//stores geolocation into variables and passes them as parameters for findOffices()
 function showPosition(position) {
   var x = document.getElementById("demo");
   var lat = position.coords.latitude;
@@ -82,6 +63,7 @@ function showPosition(position) {
   findOffices(lat,lon);
 }
 
+//uses the betterdoctor api to find 4 doctor offices within a 50 mi radius of user
 function findOffices(latitude,longitude) {
   var location = "&location=" + latitude.toString() + "," + longitude.toString() + ",50";
   var userLocation = "&user_location=" + latitude.toString() + "," + longitude.toString();
@@ -89,27 +71,34 @@ function findOffices(latitude,longitude) {
   fetchJSON(path, function(data) {
 
     for (var i = 0; i < data.data.length; i++) {
+      //creates div class column
       var columnDiv = document.createElement("div");
       columnDiv.className = "column";
 
+      //creates div class card
       var cardDiv = document.createElement("div");
       cardDiv.className = "card";
 
+      //creates and stores id/header for office name
       var nameOffice = document.createElement("h3");
       nameOffice.id = "nameOffice";
       nameOffice.innerHTML = data.data[i].name;
       cardDiv.appendChild(nameOffice);
 
+      //creates and stores id/header for address, city, zip
       var addressOffice = document.createElement("p");
       addressOffice.id = "addressOffice";
       addressOffice.innerHTML = (data.data[i].visit_address.street + ", " + data.data[i].visit_address.city + " " + data.data[i].visit_address.zip);
       cardDiv.appendChild(addressOffice);
 
+      //creates and stores id/header for office landline
       var phoneNumber = document.createElement("p");
       phoneNumber.id = "phoneNumber";
       phoneNumber.innerHTML = data.data[i].phones[1].number;
       cardDiv.appendChild(phoneNumber);
 
+      //checks if there's more than one doctor in the office
+      //creates and stores id/header for doctor's First Name, Last Name, and specialty
       if (data.data[i].total_doctors > 1) {
         for (var j = 0; j < data.data[i].total_doctors; j++) {
           console.log(data.data[i].doctors[j].profile);
@@ -119,33 +108,21 @@ function findOffices(latitude,longitude) {
           cardDiv.appendChild(doctorRec);
         }
       } else {
+        //if only one doctor, then print first doctor of the doctor list
         var doctorRec = document.createElement("p");
         doctorRec.className = "doctorRec";
         doctorRec.innerHTML = (data.data[i].doctors[0].profile.first_name + " " + data.data[i].doctors[0].profile.last_name + " " + data.data[i].doctors[0].specialties[0].actor);
         cardDiv.appendChild(doctorRec);
       }
 
+      //adds all of office names, address, phone number, and doctors into their own card
       columnDiv.appendChild(cardDiv);
       document.getElementById("doctorOffices").appendChild(columnDiv);
 
+      //only allows the user to click the find nearby clinics once
       document.getElementById("findHelpButton").disabled = true;
       var showClinics = document.getElementById("map");
       showClinics.scrollIntoView();
     }
   });
 }
-
-// function initMap() {
-//   var map;
-//
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: -34.397, lng: 150.644},
-//     zoom: 8
-//   });
-// }
-//
-// function init() {
-//
-// }
-//
-// window.onload = init;

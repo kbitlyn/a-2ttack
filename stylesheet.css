@@ -18,12 +18,12 @@ h6 {
 a {
   color: #90C1F0;
 }
+
 /* float 4 columns side by side */
 .column {
   float: left;
   width: 25%;
   padding: 5px;
-  /* 0 10px; */
 }
 
 /* remove extra left and right margins */
@@ -85,6 +85,7 @@ a {
   display: inline-block;
 }
 
+/* stylizes the card font */
 .doctorRec {
   font-family: "Press Start 2P";
   font-size: 11px;
@@ -112,15 +113,9 @@ a {
 }
 
 #scratchGames {
-  text-align: center;
+  text-align: center; /*makes the embeded box center*/
   padding-bottom: 5px;
 }
-
-/* #map {
-  height: 600px;
-  width: 88%;
-  text-align: center;
-} */
 
 #nameOffice {
   font-family: "Press Start 2P";
@@ -138,5 +133,5 @@ a {
 }
 
 #creditsBody {
-  display: none;
+  display: none; /*makes the credit body disappear when page is loaded*/
 }
