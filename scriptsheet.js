@@ -22,20 +22,20 @@ document.getElementById("findHelpButton").onclick = function() {
 //   })
 // })
 
-$(function(){
-  var count = 3,
-      $btn = $('input[type="img"]'); //Or which ever you want
-      //Change the label of $btn
-      $btn.val($btn.val()+' ('+count+')')
-
-  $btn.click(function(){
-      $btn.val($btn.val().replace(count,count-1));
-      count--;
-      if(count==0) {
-            return !$btn.attr('disabled','disabled');
-      }
-  })
-})
+// $(function(){
+//   var count = 3,
+//       $btn = $('input[type="img"]'); //Or which ever you want
+//       //Change the label of $btn
+//       $btn.val($btn.val()+' ('+count+')')
+//
+//   $btn.click(function(){
+//       $btn.val($btn.val().replace(count,count-1));
+//       count--;
+//       if(count==0) {
+//             return !$btn.attr('disabled','disabled');
+//       }
+//   })
+// })
 
 function toggleInfo() {
   var showCredits = document.getElementById("creditsBody");
