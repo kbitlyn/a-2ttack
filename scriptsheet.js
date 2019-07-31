@@ -129,7 +129,7 @@ function findOffices(latitude,longitude) {
       document.getElementById("doctorOffices").appendChild(columnDiv);
 
       document.getElementById("findHelpButton").disabled = true;
-      var showClinics = document.getElementById("doctorOffices");
+      var showClinics = document.getElementById("map");
       showClinics.scrollIntoView();
     }
   });
